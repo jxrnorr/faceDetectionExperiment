@@ -83,10 +83,12 @@ def compare_faces_with_landmarks(image1_path, image2_path):
 
 
 if __name__ == "__main__":
-    image1_path = "/Users/User/OneDrive/Desktop/testphoto/img1.jpg"
-    image2_path = "/Users/User/OneDrive/Desktop/testphoto/img2.jpg"
-    image3_path = "/Users/User/OneDrive/Desktop/testphoto/img3.jpg"
-    image4_path = "/Users/User/OneDrive/Desktop/testphoto/img4.jpg"
+    image1_path = "/Users/User/OneDrive/Desktop/testphoto/img5.jpg"
+    image2_path = "/Users/User/OneDrive/Desktop/testphoto/img6.jpg"
+    image3_path = "/Users/User/OneDrive/Desktop/testphoto/img7.jpg"
+    image4_path = "/Users/User/OneDrive/Desktop/testphoto/img8.jpg"
+    image5_path = "/Users/User/OneDrive/Desktop/testphoto/img9.jpg"
+    image6_path = "/Users/User/OneDrive/Desktop/testphoto/img10.jpg"
     
     # Compare image1 and image2
     result1_2, similarity1_2 = compare_faces_with_landmarks(image1_path, image2_path)
@@ -98,22 +100,18 @@ if __name__ == "__main__":
     print("Comparison between image 1 and image 3:", result1_3)
     print("Similarity between image 1 and image 3:", similarity1_3)
     
-    # Compare image1 and image2
+    # Compare image1 and image4
     result1_4, similarity1_4 = compare_faces_with_landmarks(image1_path, image4_path)
     print("Comparison between image 1 and image 4:", result1_4)
     print("Similarity between image 1 and image 4:", similarity1_4)
 
-    # Compare image2 and image3
-    result2_3, similarity2_3 = compare_faces_with_landmarks(image2_path, image3_path)
-    print("Comparison between image 2 and image 3:", result2_3)
-    print("Similarity between image 2 and image 3:", similarity2_3)
+    # Compare image4 and image5
+    result4_5, similarity4_5 = compare_faces_with_landmarks(image4_path, image5_path)
+    print("Comparison between image 4 and image 5:", result4_5)
+    print("Similarity between image 4 and image 5:", similarity4_5)
 
-    # Compare image1 and image2
-    result2_4, similarity2_4 = compare_faces_with_landmarks(image2_path, image4_path)
-    print("Comparison between image 2 and image 4:", result2_4)
-    print("Similarity between image 2 and image 4:", similarity2_4)
+    # Compare image4 and image6
+    result4_6, similarity4_6 = compare_faces_with_landmarks(image4_path, image6_path)
+    print("Comparison between image 4 and image 6:", result4_6)
+    print("Similarity between image 4 and image 6:", similarity4_6)
 
-    # Compare image1 and image2
-    result3_4, similarity3_4 = compare_faces_with_landmarks(image3_path, image4_path)
-    print("Comparison between image 3 and image 4:", result3_4)
-    print("Similarity between image 3 and image 4:", similarity3_4)
